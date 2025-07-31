@@ -1,10 +1,13 @@
 # AI Text-to-Image Generator
 
-A modern, responsive React application that transforms text descriptions into stunning AI-generated images using Hugging Face's Stable Diffusion model. Built with React and styled with Tailwind CSS for a sleek, user-friendly experience.
+A modern, responsive React application that transforms text descriptions into AI-generated images using Hugging Face's Stable Diffusion model. Built with React functional components and styled with Tailwind CSS, this web app provides an intuitive interface for creating digital art through natural language prompts. Users can enter descriptive text, select from sample prompts, and generate high-quality images with real-time loading feedback and one-click download functionality.
 
-## Available Scripts
+## Key Highlights:
+Leverages Stable Diffusion for creating unique images from text
 
-In the project directory, you can run:
+# AI Image Generation: Leverages Stable Diffusion for creating unique images from text
+
+In the project directory, you can run: 
 
 ### `npm start`
 
