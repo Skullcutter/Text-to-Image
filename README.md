@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# AI Text-to-Image Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive React application that transforms text descriptions into stunning AI-generated images using Hugging Face's Stable Diffusion model. Built with React and styled with Tailwind CSS for a sleek, user-friendly experience.
 
 ## Available Scripts
 
