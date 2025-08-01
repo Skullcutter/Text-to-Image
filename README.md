@@ -1,11 +1,12 @@
 # AI Text-to-Image Generator
+A modern, responsive React application that transforms text descriptions into AI-generated images using Black Forest Labs' FLUX.1-schnell model. Built with React functional components and styled with Tailwind CSS, this web app provides an intuitive interface for creating digital art through natural language prompts.
 
-A modern, responsive React application that transforms text descriptions into AI-generated images using Hugging Face's Stable Diffusion model. Built with React functional components and styled with Tailwind CSS, this web app provides an intuitive interface for creating digital art through natural language prompts. Users can enter descriptive text, select from sample prompts, and generate high-quality images with real-time loading feedback and one-click download functionality.
+The application features a clean, gradient-based design that works seamlessly across all devices, from mobile phones to desktop computers. Users can enter descriptive text, select from sample prompts, and generate high-quality images with real-time loading feedback and one-click download functionality.
 
 ## Key Highlights:
 Leverages Stable Diffusion for creating unique images from text
 
-- 🎨 **AI Image Generation**: Leverages Stable Diffusion for creating unique images from text.
+- 🎨 **AI Image Generation**: Leverages FLUX.1-schnell for ultra-fast, high-quality image creation from text.
 
 - 📱 **Fully Responsive**: Mobile-first design that adapts to any screen size.
 
@@ -16,7 +17,7 @@ Leverages Stable Diffusion for creating unique images from text
 - 🔧 **Clean Architecture**: Modular, maintainable codebase following React best practices.
 
 # 🌟 Features
-  - **AI-Powered Image Generation**: Leverages Stable Diffusion model via Hugging Face API.
+  - **AI-Powered Image Generation**: Leverages FLUX.1-schnell model via Hugging Face API.
     
   - **Intuitive User Interface**: Clean, modern design with gradient backgrounds and smooth animations.
     
@@ -78,8 +79,9 @@ npx tailwindcss init -p
 - Select "Read" permissions
 - Copy the generated token
 
-**3. Add your API key to the application:
-Option 1: Environment Variables (Recommended)**
+**3. Add your API key to the application:**
+
+**Option 1: Environment Variables (Recommended)**
 Create a .env file in the root directory:
 ``` env
 REACT_APP_HF_API_KEY=your_hugging_face_api_key_here
@@ -90,7 +92,7 @@ Then update the component:
 const API_KEY = process.env.REACT_APP_HF_API_KEY;
 ```
 
-***Option 2: Direct Replacement***
+**Option 2: Direct Replacement**
 Replace ```'YOUR_HF_API_KEY'``` in the ```TextToImage.js``` file with your actual API key:
 ``` javascript
 const API_KEY = 'hf_your_actual_api_key_here';
@@ -130,11 +132,36 @@ yarn start
 - Wait for the AI to create your image
 - Download your creation
 
+# 📁 Project Strcture
+```
+text-to-image-generator/
+├── node_modules/              # Dependencies
+├── public/                    # Public assets
+├── src/
+│   ├── components/
+│   │   ├── DownloadButton.jsx # Download functionality component
+│   │   ├── Error.jsx          # Error handling component
+│   │   ├── GenerateButton.jsx # Image generation button
+│   │   ├── ImageDisplay.jsx   # Generated image display
+│   │   └── TexttoImage.jsx    # Main component
+│   ├── service/
+│   │   └── apiTexttoImage.js  # Hugging Face API integration
+│   ├── App.jsx                # App wrapper
+│   ├── index.js               # Entry point
+│   └── index.css              # Tailwind styles
+├── .env.local                 # Environment variables
+├── .gitignore
+├── package.json
+├── postcss.config.js
+├── README.md
+└── tailwind.config.js
+```
+
 # 🛠️ Build With
 - **React** - Frontend library
 - **TailwindCSS** - Utility-first CSS framework
 - **Hugging Face API** - AI model inference
-- **Stable Diffusion** - Text-to-image model
+- **FLUX.1-schnell** - Ultra-fast text-to-image model by Black Forest Labs
 
 # 🤝 Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
@@ -152,5 +179,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 # 🙏 Acknowledgments
 
 - **Hugging Face** for providing the AI model API
-- **Stability AI** for the Stable Diffusion model
+- **Black Forest Labs' FLUX.1-schnell** for the Ultra-fast text-to-image FLUX.1-schnell model
 - **Tailwind CSS** for the utility-first CSS framework
