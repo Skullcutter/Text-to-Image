@@ -8,7 +8,7 @@ function useImageGeneration() {
 
   const API_KEY = process.env.REACT_APP_API_KEY;
   const API_URL =
-    "https://api-inference.huggingface.co/models/runwayml/stable-diffusion-v1-4";
+    "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-schnell";
 
   const generateImage = async () => {
     if (!inputText.trim()) {
